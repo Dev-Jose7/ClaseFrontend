@@ -13,7 +13,7 @@ console.log("El área es: " + area + " metros cuadrados");
 //Condicionales
 const edad = 15;
 
-if(edad >= 18){
+if(edad >= 18){ 
     console.log("Eres mayor de edad, tienes " + edad + " años");
 }else{
     console.log("Eres menor de edad, tienes " + edad + " años");
