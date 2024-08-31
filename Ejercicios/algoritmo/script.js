@@ -6,16 +6,34 @@ let promedio = 0;
 let total = 0;
 
 elementoBoton.addEventListener("click", function(e){
-    
+    contadorCantidad();
+    operacion();
+});
 
+elementoEntrada.addEventListener("keydown", function(e){
+    console.log(e.key)
+    if(e.key == "Enter"){
+        contadorCantidad();
+        operacion();
+    }
+})
+
+
+function contadorCantidad(){
     if(elementoEntrada.value != ""){
         cantidad++;
+        console.log(cantidad);
     }
+}
 
-    total = Number(elementoSalida.value) + Number(elementoEntrada.value);
+function operacion(){
+    total += Number(elementoEntrada.value);
+    console.log(total);
+
     promedio = total / cantidad;
-    
+
     elementoSalida.value = promedio;
 
     elementoEntrada.value = "";
-});
+}
+
