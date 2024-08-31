@@ -6,8 +6,7 @@ let promedio = 0;
 let total = 0;
 
 elementoBoton.addEventListener("click", function(e){
-    contadorCantidad();
-    operacion();
+    
 });
 
 elementoEntrada.addEventListener("keydown", function(e){
