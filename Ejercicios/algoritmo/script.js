@@ -36,3 +36,6 @@ function operacion(){
     elementoEntrada.value = "";
 }
 
+function prueba(a, b){
+    return a + b;
+}
