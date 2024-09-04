@@ -1,6 +1,7 @@
 let i = 10;
 // let numero = 987654;
-numero = prompt("Ingrese un número");
+let numero = prompt("Ingrese un número");
+let modulo = 0;
 let cantidad = 0
 
 do {
