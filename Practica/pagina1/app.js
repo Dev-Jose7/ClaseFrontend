@@ -50,31 +50,45 @@ let inventario = [
     },
 ]
 
+const nuevoProducto = {id:5, nombre:"Chaqueta", precio:400000, talla:"M", disponibilidad:true}
+
+document.getElementById("agregarProducto").addEventListener("click", function(){
+    Agregar(nuevoProducto)
+    console.log(nuevoProducto)
+})
+    
 function Agregar(producto){
     inventario.push(producto);
+    mostrarInventario();
+    console.log(inventario)
+    // document.write("<br><h2>Mostrar inventario completa</h2><br>")
+    // inventario.forEach(function(producto){
+    //     // document.write(index.id, index.nombre, index.precio, index.talla, index.disponibilidad);
+    //     const {nombre, precio, disponibilidad} = producto;
+    //     let status
+    //     if(disponibilidad == true){
+    //         status = "Disponible"
+    //     }else if(disponibilidad == false){
+    //         status = "Agotado"
+    //     }
 
-    document.write("<br><h2>Mostrar inventario completa</h2><br>")
-    inventario.forEach(function(producto){
-        // document.write(index.id, index.nombre, index.precio, index.talla, index.disponibilidad);
-        const {nombre, precio, disponibilidad} = producto;
-        let status
-        if(disponibilidad == true){
-            status = "Disponible"
-        }else if(disponibilidad == false){
-            status = "Agotado"
-        }
-
-    document.write(`Producto: ${nombre}, Precio: ${precio}, ${status}`);
-    });
-
+    // document.write(`Producto: ${nombre}, Precio: ${precio}, ${status}`);
+    // });
 }
 
 
 function ejecutar(){
-    Agregar({
+    const Agregar = {
         id: 4, 
         nombre:"Correa",
         precio: 20000,
         disponibilidad: true
-    });
-}ñ
+    };
+}
+
+function mostrarInventario(){
+    const elementoInventario = document.querySelector("inventario");
+    for (let i = 0; i < inventario.length; i++) {
+        elementoInventario.textContent += inventario[i].nombre;
+    }
+}
