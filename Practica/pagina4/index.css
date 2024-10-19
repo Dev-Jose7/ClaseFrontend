@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+.login {
+    background-color: white;
+    padding: 20px;
+    width: 300px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.login button {
+    padding: 10px;
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.login button:hover {
+    background-color: #45a049;
+}
+
+.menu {
+    margin-top: 20px;
+    background-color: #333;
+    padding: 10px;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    border-radius: 5px;
+}
+
+.menu a:hover {
+    background-color: #45a049;
+}
+
+.inventario {
+    margin-top: 20px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.oculto {
+    display: none;
+}
+
+#errorMsgLogin, #errorMsgRegister {
+    color: red;
+}
